@@ -65,7 +65,7 @@ function ProductForm({ editingProduct, onSubmit, onCancel }) {
             />
             <input
                 name="category"
-                placeholder="Category (e.g., Electronics, Clothing)"
+                placeholder="Category (e.g., Flowers, Arts)"
                 className={inputClass}
                 value={form.category || ""}
                 onChange={handleChange}

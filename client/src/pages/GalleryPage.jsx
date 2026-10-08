@@ -36,7 +36,7 @@ function GalleryPage({ products, loading }) {
             <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                 <input
                     type="text"
-                    placeholder="Search products..."
+                    placeholder="🔍 Search products..."
                     className="w-full rounded-xl border border-slate-300 px-4 py-2 md:w-64"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
@@ -48,10 +48,11 @@ function GalleryPage({ products, loading }) {
                             <button
                                 key={cat}
                                 onClick={() => setSelectedCategory(cat)}
-                                className={`rounded-full px-4 py-2 text-sm font-medium transition ${selectedCategory === cat
+                                className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+                                    selectedCategory === cat
                                         ? "bg-indigo-600 text-white shadow-md"
                                         : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                                    }`}
+                                }`}
                             >
                                 {cat}
                             </button>
