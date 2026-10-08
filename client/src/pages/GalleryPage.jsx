@@ -36,7 +36,7 @@ function GalleryPage({ products, loading }) {
             <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                 <input
                     type="text"
-                    placeholder="🔍 Search products..."
+                    placeholder="Search products..."
                     className="w-full rounded-xl border border-slate-300 px-4 py-2 md:w-64"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
